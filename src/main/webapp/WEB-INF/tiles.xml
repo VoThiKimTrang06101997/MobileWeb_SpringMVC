@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="template-main"
+		template="/WEB-INF/views/default-layout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="content" value=""></put-attribute>
+	</definition>
+
+	<!--Login page -->
+	<definition name="login" extends="template-main">
+		<put-attribute name="title" value="LOGIN"></put-attribute>
+		<put-attribute name="content"
+			value="/WEB-INF/views/login.jsp"></put-attribute>
+	</definition>
+	
+	<!--show-profile page -->
+	<definition name="update-profile" extends="template-main">
+		<put-attribute name="title" value="Update Profile"></put-attribute>
+		<put-attribute name="text" value="MOBILE STORE"></put-attribute>
+		<put-attribute name="content"
+			value="/WEB-INF/views/edit-profile.jsp"></put-attribute>
+	</definition>
+
+	<definition name="show-profile" extends="template-main">
+		<put-attribute name="title" value="Update Profile"></put-attribute>
+		<put-attribute name="text" value="MOBILE STORE"></put-attribute>
+		<put-attribute name="content"
+					   value="/WEB-INF/views/show-profile.jsp"></put-attribute>
+	</definition>
+	
+	<!--register page -->
+	<definition name="register" extends="template-main">
+		<put-attribute name="title" value="REGISTER"></put-attribute>
+		<put-attribute name="text" value="MOBILE STORE"></put-attribute>
+		<put-attribute name="content"
+			value="/WEB-INF/views/register.jsp"></put-attribute>
+	</definition>
+	
+	<!--update password page -->
+	<definition name="update-password" extends="template-main">
+		<put-attribute name="title" value="Update password"></put-attribute>
+		<put-attribute name="content"
+			value="/WEB-INF/views/change-password.jsp"></put-attribute>
+	</definition>
+	
+	<!--home - product page -->
+	<definition name="view-products" extends="template-main">
+		<put-attribute name="title" value="View Product"></put-attribute>
+		<put-attribute name="content"
+			value="/WEB-INF/views/view-product.jsp"></put-attribute>
+	</definition>
+	
+	<!--cart view -->
+	<definition name="view-cart" extends="template-main">
+		<put-attribute name="title" value="Cart"></put-attribute>
+		<put-attribute name="content"
+			value="/WEB-INF/views/cart.jsp"></put-attribute>
+	</definition>
+	<!--cart view -->
+	<definition name="add-product" extends="template-main">
+		<put-attribute name="title" value="Add Product"></put-attribute>
+		<put-attribute name="content"
+			value="/WEB-INF/views/add-product.jsp"></put-attribute>
+	</definition>
+	
+	<!--detail product view -->
+	<definition name="detail-product" extends="template-main">
+		<put-attribute name="title" value="Product"></put-attribute>
+		<put-attribute name="content"
+			value="/WEB-INF/views/detail-product.jsp"></put-attribute>
+	</definition>
+
+	<!--show all address -->
+	<definition name="show-all-address" extends="template-main">
+		<put-attribute name="title" value="All Address"></put-attribute>
+		<put-attribute name="content"
+					   value="/WEB-INF/views/all-address.jsp"></put-attribute>
+	</definition>
+
+	<!--show add address -->
+	<definition name="add-address" extends="template-main">
+		<put-attribute name="title" value="Add Address"></put-attribute>
+		<put-attribute name="content"
+					   value="/WEB-INF/views/insert-edit-address.jsp"></put-attribute>
+	</definition>
+
+	<!--show add address -->
+	<definition name="edit-address" extends="template-main">
+		<put-attribute name="title" value="Edit Address"></put-attribute>
+		<put-attribute name="content"
+					   value="/WEB-INF/views/insert-edit-address.jsp"></put-attribute>
+	</definition>
+
+</tiles-definitions>
